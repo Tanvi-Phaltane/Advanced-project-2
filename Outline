@@ -1,0 +1,20 @@
+The name of the project is «The application of a web-crawler to the problem of web data acquisition». It includes also 3 phases:
+
+    Data acquisition. 
+    For this phase one of the existing open-source web-crawlers (web-spiders) from GitHub should be used. Python should be chosen as the main programming language.  The chosen web-crawler should be forked to the University GitHub repository (https://github.com/Jacobs-University) and modified as follows:
+
+        Be able to read configuration data from database (see Phase 2)
+        Write the discovered data to the same database
+        Perform daily search through the defined (with configuration data) web-resources for texts with defined (with configuration data) keywords
+        Store the discovered data in terms of «keyword features» to the database. The features may be: keyword frequency, keyword context (e.g. positive or negative), etc.
+
+    Data storage.
+    For this phase a database for storing configuration and gathered data should be created. For this purpose PostrgreSQL or SQLite should be used.
+    The gathered data should be organized in tables as the list of date, keyword id and list of corresponding features.
+    The configuration data is entered manually and includes:
+
+        The list of keywords: which tells the web-crawler WHAT to look for
+        The list of web-resources: which tells the web-crawler WHERE to look for. This may be web-sites of news agencies, daily updated publics, etc.
+
+    Data visualization and analysis.
+    In this phase the Python data analysis tools as Pandas and Plotly should be applied to the gathered data. The data should be visualized as continuous charts (date) - (keyword / feature). The correlation between features should be also discovered and presented as the result of the project.
