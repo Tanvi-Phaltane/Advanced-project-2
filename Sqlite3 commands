@@ -10,3 +10,7 @@ insert into keyword_list(keyword) values ('Germany');
 select * from keyword_list;
 .width 15 40
 select * from keyword_list;
+.exit
+.sqlite3 test.db
+.tables
+.schema
