@@ -1,0 +1,12 @@
+SQLite3 Binary file downloaded for installation on Windows 
+Commands:
+sqlite3 test.db
+create table keyword_list(id integer primary key, keyword varchar);
+insert into keyword_list(id,keyword) values (1,'Brexit');
+insert into keyword_list(keyword) values ('immigration');
+insert into keyword_list(keyword) values ('Germany');
+.mode column                                                                           
+.headers on                                                                            
+select * from keyword_list;
+.width 15 40
+select * from keyword_list;
